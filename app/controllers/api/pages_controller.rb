@@ -6,4 +6,13 @@ class Api::PagesController < ApplicationController
 
     render "fortune.json.jb"
   end
+
+  def lotto_action
+    @lotto = []
+    6.times do
+      @lotto << rand(1..60)
+    end
+
+    render "lotto.json.jb"
+  end
 end
