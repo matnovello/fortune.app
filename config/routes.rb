@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   # end
 
   namespace :api do
+    get "/fortune_path" => "pages#fortune_action"
   end
 end
