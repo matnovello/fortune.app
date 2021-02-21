@@ -1,1 +1,1 @@
-{ "message" => @fortune1 }
+{ "fortune" => @random }
